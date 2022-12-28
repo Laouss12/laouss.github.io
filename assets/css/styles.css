@@ -9,7 +9,7 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #1bc0da;
+    --first-color: #df4040;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -98,7 +98,7 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: #df4040;
 }
 
 /*===== LAYOUT =====*/
@@ -117,7 +117,7 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
+    background-color: var(--white-color);
 }
 
 /*===== NAV =====*/
@@ -135,7 +135,7 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(255,255,255,.3);
+        background-color: var(--dark-color);
         transition: .5s;
         backdrop-filter: blur(10px);
     }
@@ -145,16 +145,17 @@ img{
 }
 .nav__link{
     position: relative;
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 .nav__link:hover{
-    color: var(--first-color);
+    color: #df4040;
+    transition: .1s;
 }
 .nav__logo{
-    color: var(--white-color);
+    color: var(--dark-color);
 }
 .nav__toggle{
-    color: var(--white-color);
+    color: var(--dark-color);
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -172,13 +173,13 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: #df4040;
 }
 
 /*===== HOME =====*/
 .home{
     position: relative;
-    background-color: var(--first-color);
+    background-color: var(--white-color);
     overflow: hidden;
 }
 .home__container{
@@ -188,7 +189,7 @@ img{
 .home__title{
     align-self: flex-end;
     font-size: var(--big-font-size);
-    color: var(--white-color);
+    color: var(--dark-color);
     line-height: .8;
 }
 .home__title span{
@@ -202,7 +203,10 @@ img{
 .home__scroll-link{
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    color: var(--white-color);
+    color: var(--dark-color);
+}
+.home__scroll-link:hover{
+    color: #df4040;
 }
 .home__img{
     position: absolute;
@@ -222,7 +226,7 @@ img{
     justify-content: center;
     width: 50%;
     height: auto;
-    background-color: #1bc1dab0;
+    background-color: #df4040;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -231,7 +235,7 @@ img{
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
-    color: var(--first-color);
+    color: var(--dark-color);
     margin-bottom: var(--mb-1);
 }
 .about__text{
@@ -241,6 +245,8 @@ img{
 .about__profession{
     display: block;
     margin-bottom: var(--mb-4);
+    color: var(--dark-color);
+    font-weight: bold;
 }
 .about__social-icon{
     font-size: 1.4rem;
@@ -255,7 +261,7 @@ img{
     row-gap: 2rem;
 }
 .skills__subtitle{
-    color: var(--first-color);
+    color: #df4040;
     margin-bottom: var(--mb-3);
 }
 .skills__name{
@@ -318,7 +324,7 @@ img{
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
-    color: var(--first-color);
+    color: #df4040;
 }
 .contact__text{
     display: inline-block;
@@ -414,13 +420,13 @@ img{
         display: none;
     }
     .nav__link{
-        color: var(--white-color);
+        color: var(--dark-color);
     }
     .nav__link:hover{
-        color: var(--white-color);
+        color: #df4040;
     }
     .active::after{
-        background-color: var(--white-color);
+        background-color: #df4040;
     }
 
     .home__container{
