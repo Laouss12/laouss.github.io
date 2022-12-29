@@ -3,7 +3,7 @@
 
 /*===== VARIABLES CSS =====*/
 :root{
-    --header-height: 3rem;
+    --header-height: 2.8rem;
     --font-medium: 500;
 }
 
@@ -11,7 +11,7 @@
 :root{
     --first-color: #df4040;
     --white-color: #FAFAFF;
-    --dark-color: #2A3B47;
+    --dark-color: #1e1e1e;
     --text-color: #697477;
 }
 
@@ -98,7 +98,7 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: #df4040;
+    background-color: var(--first-color);
 }
 
 /*===== LAYOUT =====*/
@@ -117,8 +117,8 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--white-color);
 }
+
 
 /*===== NAV =====*/
 .nav{
@@ -135,20 +135,20 @@ img{
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: var(--dark-color);
+        background-color: transparent;
         transition: .5s;
         backdrop-filter: blur(10px);
     }
 }
 .nav__item{
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-3);
 }
 .nav__link{
     position: relative;
-    color: var(--white-color);
+    color: var(--dark-color);
 }
 .nav__link:hover{
-    color: #df4040;
+    color: var(--first-color);
     transition: .1s;
 }
 .nav__logo{
@@ -162,7 +162,7 @@ img{
 
 /*=== Show menu ===*/
 .show{
-    right: 0;
+    right: -8rem;
 }
 
 /*Active menu*/
@@ -173,7 +173,7 @@ img{
     height: .18rem;
     left: 0;
     top: 2rem;
-    background-color: #df4040;
+    background-color: var(--first-color);
 }
 
 /*===== HOME =====*/
@@ -206,12 +206,12 @@ img{
     color: var(--dark-color);
 }
 .home__scroll-link:hover{
-    color: #df4040;
+    color: var(--first-color);
 }
 .home__img{
     position: absolute;
     left: 5%;
-    bottom: -25%;
+    bottom: -15%;
     width: 230px;
 }
 
@@ -226,7 +226,7 @@ img{
     justify-content: center;
     width: 50%;
     height: auto;
-    background-color: #df4040;
+    background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -261,7 +261,7 @@ img{
     row-gap: 2rem;
 }
 .skills__subtitle{
-    color: #df4040;
+    color: var(--first-color);
     margin-bottom: var(--mb-3);
 }
 .skills__name{
@@ -324,7 +324,7 @@ img{
 }
 .contact__subtitle{
     font-size: var(--normal-font-size);
-    color: #df4040;
+    color: var(--first-color);
 }
 .contact__text{
     display: inline-block;
@@ -423,10 +423,10 @@ img{
         color: var(--dark-color);
     }
     .nav__link:hover{
-        color: #df4040;
+        color: var(--first-color);
     }
     .active::after{
-        background-color: #df4040;
+        background-color: var(--first-color);
     }
 
     .home__container{
@@ -436,7 +436,7 @@ img{
     }
     .home__img{
         width: 300px;
-        left: 5%;
+        left: 8%;
     }
 
     .about__container{
